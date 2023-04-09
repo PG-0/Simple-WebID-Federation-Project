@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Web ID Federation Demo</title>
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.2.19.min.js"></script>
+    <script src="scripts.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+  </head>
+  <body>
+   
+    <div id="wrapper">
+    
+      <div id="g_id_onload"
+           data-client_id="85752944161-5m3dl5hnhfmg9bi4tpd6lfhg7gjid01s.apps.googleusercontent.com"
+           data-context="signin"
+           data-ux_mode="popup"
+           data-callback="onSignIn"
+           data-auto_prompt="false">  
+        <h1>Federated Web ID Login Project</h1>
+      </div> 
+      
+      <div class="g_id_signin" data-type="standard"></div>
+      
+      <p></p>
+      
+      <div id="viewer"></div>
+      
+      <div id="output"></div>
+      
+    </div>
+
+  </body>
+</html>

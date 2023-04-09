@@ -1,0 +1,51 @@
+/* CSS file for PetIDF Demo */
+
+/* Set default font to sans-serif */
+body {
+    font-family: sans-serif;
+  }
+  
+  /* Center wrapper div horizontally */
+  #wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Style for the title */
+  h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+  
+  /* Style for the sign-in button */
+  .g_id_signin {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #4285F4;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for the sign-in button */
+  .g_id_signin:hover {
+    background-color: #3367D6;
+  }
+  
+  /* Style for the output div */
+  #output {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  /* Style for the viewer div */
+  #viewer {
+    margin-top: 20px;
+  }
+  
