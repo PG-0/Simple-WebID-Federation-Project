@@ -6,7 +6,7 @@ Cognito has a limit of 5k users and the use of federated identities allows for l
 
 ## Architecture Diagram
 
-[Insert_Image]
+![FedWebIDProject drawio](https://user-images.githubusercontent.com/12003721/230792962-269a51b5-439f-4cc8-a9f8-cb18b4b8c943.png)
 
 ## Infrastructure/Technology Used
 
