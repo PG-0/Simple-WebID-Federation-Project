@@ -9,11 +9,10 @@ Cognito has a limit of 5k users and the use of federated identities allows for l
 ![FedWebIDProject drawio](https://user-images.githubusercontent.com/12003721/230792962-269a51b5-439f-4cc8-a9f8-cb18b4b8c943.png)
 
 ## Infrastructure/Technology Used
-
-CloudFront 
-S3 
-Cognito
-Google API
+* CloudFront
+* S3 
+* Cognito
+* Google API
 
 # Terraform
 The root main.tf script will produce reproduce the base infrastructure. S3 buckets, S3 files, S3 policies, etc. 
@@ -27,10 +26,7 @@ Google API Summary Steps:
 * Create a new project and ensure that it is for external users
 * Go to credentials, create credentials and choose OAUTH client ID, & app type = 'Web Application'
 * Copy Client ID 
-* Update client id field in the index.html and reupload to S3
-Examples '''
-data-client_id="85752944161-5m3dl5hnhfmg9bi4tpd6lfhg7gjid01s.apps.googleusercontent.com"
-''' 
+* Update client id field in the index.html and reupload to S3 ```data-client_id="857529441615m3dl5hnhfmg9bi4tpd6lfhg7gjid01s.apps.googleusercontent.com" ```
 
 Cognito Setup Summary Steps:
 * Go to AWS Cognito and select Federated Identities
@@ -39,14 +35,9 @@ Cognito Setup Summary Steps:
 * Auth Providers = Google+, and enter Google Client ID from before
 * Create permissions for AuthN and UnAuthN identities
 
-Update HTML and JS Files
-* Update Goole App ID in HTML file
-* Update Cognito ID in scripts.js
-* Update Bucket info in scripts.js
-
-
-## Pictures
-
+Update JS File and reupload to the appbucket 
+* Update Cognito ID in scripts.js ```IdentityPoolId: 'REPLACE_ME_COGNITO_IDENTITY_POOL_ID',```
+* Update Bucket info in scripts.js ```Bucket: "REPLACE_ME_NAME_OF_PATCHES_PRIVATE_BUCKET" ```
 
 ## Lessons Learned
 This is my first time using Terraform modules successfully! In my prior projects, my terraform code was many hundreds of lines long. With modules, it help's with the aesthetic appeal of the code and helps logically organize the code. 
