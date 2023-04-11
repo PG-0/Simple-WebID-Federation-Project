@@ -1,4 +1,4 @@
-# Simple_WebID_Federation_Project
+# Simple WebID Federation Project
 
 This project showcases on we can use federated identities to access a private buckets S3 content for a serverless appplication. 
 
